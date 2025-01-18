@@ -1,0 +1,168 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Languages Known</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <style>
+        /* Body and General Styling */
+        body {
+            margin: 0;
+            font-family: 'Italiana', Arial, sans-serif;
+            background: url('{% static "resume_app/images/backgroundpic.png" %}') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .input-container {
+            margin: 20px auto;
+        }
+
+        input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 15px;
+            border: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 1em;
+        }
+
+        input[type="text"]::placeholder {
+            color: #ddd;
+        }
+
+        select {
+            width: 60%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 15px;
+            border: none;
+            background: rgba(128, 128, 128, 0.8); /* Glossy grey with transparency */
+            color: white;
+            font-size: 1em;
+            appearance: none; /* Removes default styling for consistency across browsers */
+            -webkit-appearance: none; /* Safari */
+            -moz-appearance: none; /* Firefox */
+            cursor: pointer;
+        }
+
+        select:hover {
+            background: rgba(169, 169, 169, 0.9); /* Slightly lighter grey on hover */
+        }
+
+        select:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Highlight on focus */
+        }
+
+        option {
+            background: rgba(128, 128, 128, 0.8); /* Same grey for dropdown options */
+            color: white;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .next-button, .add-more-button {
+            padding: 10px 30px;
+            border: none;
+            border-radius: 20px;
+            background: black;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 0 10px;
+            font-family: 'Italiana', serif; /* Applying Italian font to buttons */
+            transition: background-color 0.3s ease;
+        }
+
+        .next-button:hover, .add-more-button:hover {
+            background-color: #333;
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function addMoreLanguages() {
+            const inputContainer = document.querySelector('.input-container');
+            const newInputGroup = document.createElement('div');
+            newInputGroup.style.marginTop = '10px';
+            newInputGroup.innerHTML = `
+                <input type="text" name="language[]" placeholder="Language ${inputContainer.children.length + 1}" required>
+                <select name="proficiency[]" required>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                    <option value="Fluent">Fluent</option>
+                </select>
+            `;
+            inputContainer.appendChild(newInputGroup);
+        }
+        
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Languages Known</h1>
+        <form method="post" action="{% url 'languages_known' %}">
+            {% csrf_token %}
+            <div class="input-container">
+                <div>
+                    <input type="text" name="language[]" placeholder="Language 1" required>
+                    <select name="proficiency[]" required>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                        <option value="Fluent">Fluent</option>
+                    </select>
+                </div>
+            </div>
+            <div class="button-container">
+                <button type="button" class="add-more-button" onclick="addMoreLanguages()">Add More Languages</button>
+                <button type="submit" class="next-button">Next</button>
+            </div>
+        </form>
+        
+
+        
+
+    
+        
+        <div class="footer">
+            <a href="#">Terms & Conditions</a> |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Accessibility</a> |
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+</body>
+</html>

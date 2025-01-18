@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        /* Style your resume template here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .content {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ contact_info.first_name }} {{ contact_info.last_name }}'s Resume</h1>
+    <div class="section">
+        <h2>Contact Information</h2>
+        <p>Email: {{ contact_info.email }}</p>
+        <p>Phone: {{ contact_info.phone }}</p>
+        <p>City: {{ contact_info.city }}</p>
+    </div>
+    <div class="section">
+        <h2>Work Experience</h2>
+        {% for job in work_experience %}
+            <p>{{ job }}</p>
+        {% endfor %}
+    </div>
+    <div class="section">
+        <h2>Education</h2>
+        {% for edu in education %}
+            <p>{{ edu }}</p>
+        {% endfor %}
+    </div>
+    <div class="section">
+        <h2>Skills</h2>
+        <p>{{ skills }}</p>
+    </div>
+    <div class="section">
+        <h2>Languages</h2>
+        {% for lang in languages_known %}
+            <p>{{ lang.language }}: {{ lang.proficiency }}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>

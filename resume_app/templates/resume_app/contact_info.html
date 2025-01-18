@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Info</title>
+    <!-- Google Font: Italiana -->
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Italiana', serif;
+            background: url('/static/resume_app/images/backgroundpic.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        form label {
+            text-align: left;
+            font-size: 1rem;
+        }
+
+        form input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        form input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        form input:focus {
+            background: rgba(255, 255, 255, 0.3);
+            border: 1px solid white;
+        }
+
+        button {
+            grid-column: span 2;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Please Enter Your Contact Info</h1>
+
+    <!-- Main Box for Inputs -->
+    <div class="container">
+        <form method="POST" action="{% url 'contact_info' %}">
+            {% csrf_token %}
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="City" required>
+
+            <label for="postal_code">Postal Code</label>
+            <input type="text" id="postal_code" name="postal_code" placeholder="Postal Code" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <label for="phone_number">Phone Number</label>
+            <input type="tel" id="phone_number" name="phone_number" placeholder="Phone Number" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer Links -->
+    <footer>
+        <a href="/terms-and-conditions">Terms & Conditions</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/accessibility">Accessibility</a>
+        <a href="/contact-us">Contact Us</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* Full-Screen Background */
+.homepage-container {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;       /* Cover the entire screen */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat; /* No repeating */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.myaccount-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10; /* Ensure it's on top */
+}
+
+.my-account-btn {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  font-family: 'serif';
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  z-index: 11; /* Ensure it's above other content */
+}
+
+/* Centered Login/Signup Box */
+.form-container {
+  width: 350px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(192, 192, 192, 0.95); /* Silver-like */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #333;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Input Fields */
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1e3c72;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-container button:hover {
+  background-color: #2a5298;
+}
+
+/* Signup Link */
+.form-container p {
+  margin-top: 15px;
+}
+
+.form-container a {
+  color: #1e3c72;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
+
+/* Logo Container */
+.logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 50px;  /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px;
+}
+
+.resume-builder {
+  color: white;
+  font-family: 'serif';
+  font-size: 30px;
+}
+
+/* Centered Image */
+.center-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px; /* Adjust size as needed */
+  height: auto;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.line-div {
+  border-left: 1px solid white;
+  height: 14px;
+}

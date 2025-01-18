@@ -1,0 +1,2310 @@
+2024-12-27 16:30:18 [27688] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /next-steps/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 68, in next_steps
+    return render(request, 'next_steps.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: next_steps.html
+2024-12-27 16:30:18 [27688] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /next-steps/ HTTP/1.1" 500 89754
+2024-12-27 17:50:10 [62180] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /next-steps/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 68, in next_steps
+    return render(request, 'next_steps.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: next_steps.html
+2024-12-27 17:50:10 [62180] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /next-steps/ HTTP/1.1" 500 89363
+2024-12-27 17:50:41 [62180] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /next-steps/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 68, in next_steps
+    return render(request, 'next_steps.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: next_steps.html
+2024-12-27 17:50:41 [62180] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /next-steps/ HTTP/1.1" 500 88951
+2025-01-03 17:56:36 [6996] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /contact-info/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 147, in contact_info
+    return render(request, 'resume_app/contact_info.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'save_contact_info' not found. 'save_contact_info' is not a valid view function or pattern name.
+2025-01-03 17:56:36 [6996] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /contact-info/ HTTP/1.1" 500 120984
+2025-01-03 19:48:12 [13200] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /save-contact-info/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 164, in save_contact_info
+    return redirect('some_next_step')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'some_next_step' not found. 'some_next_step' is not a valid view function or pattern name.
+2025-01-03 19:48:12 [13200] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "POST /save-contact-info/ HTTP/1.1" 500 87146
+2025-01-04 13:37:27 [24920] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /contact-info/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 154, in contact_info
+    return render(request, 'resume_app/contact_info.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'save_contact_info' not found. 'save_contact_info' is not a valid view function or pattern name.
+2025-01-04 13:37:27 [24920] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /contact-info/ HTTP/1.1" 500 122982
+2025-01-04 13:42:44 [25400] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /contact-info/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 157, in contact_info
+    return render(request, 'resume_app/contact_info.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'save_contact_info' not found. 'save_contact_info' is not a valid view function or pattern name.
+2025-01-04 13:42:44 [25400] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /contact-info/ HTTP/1.1" 500 123146
+2025-01-04 13:44:20 [27516] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /work-experience/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 193, in work_experience
+    return render(request, 'resume_app/work_experience.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'save_contact_info' not found. 'save_contact_info' is not a valid view function or pattern name.
+2025-01-04 13:44:20 [27516] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /work-experience/ HTTP/1.1" 500 127596
+2025-01-04 13:57:49 [27516] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /work-experience/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: resume_app_workexperience
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 180, in work_experience
+    WorkExperience.objects.create(
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: resume_app_workexperience
+2025-01-04 13:57:49 [27516] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "POST /work-experience/ HTTP/1.1" 500 169039
+2025-01-04 15:58:06 [27392] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /education/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 215, in education
+    education.objects.create(
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'objects'
+2025-01-04 15:58:06 [27392] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "POST /education/ HTTP/1.1" 500 71016
+2025-01-04 18:30:20 [25072] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /education/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 217, in education
+    education.objects.create(
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'objects'
+2025-01-04 18:30:20 [25072] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "POST /education/ HTTP/1.1" 500 71016
+2025-01-04 18:30:23 [25072] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /education/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 217, in education
+    education.objects.create(
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'objects'
+2025-01-04 18:30:23 [25072] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "POST /education/ HTTP/1.1" 500 71016
+2025-01-04 18:32:09 [25072] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /education/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 217, in education
+    education.objects.create(
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'objects'
+2025-01-04 18:32:09 [25072] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "POST /education/ HTTP/1.1" 500 71020
+2025-01-04 18:36:37 [22032] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /skills/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 247, in skills
+    return render(request, 'skills.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: skills.html
+2025-01-04 18:36:37 [22032] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /skills/ HTTP/1.1" 500 83461
+2025-01-04 19:02:16 [23896] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /skills/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 242, in skills
+    return redirect('additional_courses')  # Adjust 'next_steps' if necessary
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'additional_courses' not found. 'additional_courses' is not a valid view function or pattern name.
+2025-01-04 19:02:16 [23896] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "POST /skills/ HTTP/1.1" 500 88607
+2025-01-04 19:07:08 [23888] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /additional-courses/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 250, in additional_courses
+    return render(request, 'resume_app/additional_courses.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'static'. Did you forget to register or load this tag?
+2025-01-04 19:07:08 [23888] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /additional-courses/ HTTP/1.1" 500 147842
+2025-01-04 19:07:08 [23888] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /additional-courses/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 250, in additional_courses
+    return render(request, 'resume_app/additional_courses.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'static'. Did you forget to register or load this tag?
+2025-01-04 19:07:08 [23888] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /additional-courses/ HTTP/1.1" 500 147842
+2025-01-04 19:23:06 [28264] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /languages-known/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 268, in languages_known
+    return render(request, 'resume_app/languages_known.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 10: 'static'. Did you forget to register or load this tag?
+2025-01-04 19:23:06 [28264] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /languages-known/ HTTP/1.1" 500 152559
+2025-01-04 23:39:28 [18964] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /languages-known/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 262, in languages_known
+    return redirect('preview_resume')  # Updated to redirect to the Choose Template page
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'preview_resume' not found. 'preview_resume' is not a valid view function or pattern name.
+2025-01-04 23:39:28 [18964] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "POST /languages-known/ HTTP/1.1" 500 89222
+2025-01-04 23:44:43 [1528] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /preview-resume/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 128, in preview_resume
+    return render(request, 'resume_app/resume_preview.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: resume_app/resume_preview.html
+2025-01-04 23:44:43 [1528] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /preview-resume/ HTTP/1.1" 500 90769
+2025-01-05 00:26:30 [21372] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /choose-template/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 116, in choose_template
+    return render(request, 'choose_template.html', {'templates': templates})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: choose_template.html
+2025-01-05 00:26:30 [21372] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /choose-template/ HTTP/1.1" 500 89492
+2025-01-05 00:36:35 [21372] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /choose-template/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 116, in choose_template
+    return render(request, 'choose_template.html', {'templates': templates})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: choose_template.html
+2025-01-05 00:36:35 [21372] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /choose-template/ HTTP/1.1" 500 89492
+2025-01-05 00:42:17 [21744] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /choose-template/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 116, in choose_template
+    return render(request, 'choose_template.html', {'templates': templates})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: choose_template.html
+2025-01-05 00:42:17 [21744] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /choose-template/ HTTP/1.1" 500 89492
+2025-01-05 00:42:18 [21744] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /choose-template/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 116, in choose_template
+    return render(request, 'choose_template.html', {'templates': templates})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: choose_template.html
+2025-01-05 00:42:18 [21744] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /choose-template/ HTTP/1.1" 500 89492
+2025-01-05 00:42:19 [21744] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /choose-template/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 116, in choose_template
+    return render(request, 'choose_template.html', {'templates': templates})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: choose_template.html
+2025-01-05 00:42:19 [21744] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /choose-template/ HTTP/1.1" 500 89492
+2025-01-05 00:42:19 [21744] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /choose-template/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 116, in choose_template
+    return render(request, 'choose_template.html', {'templates': templates})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: choose_template.html
+2025-01-05 00:42:19 [21744] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /choose-template/ HTTP/1.1" 500 89492
+2025-01-05 15:48:29 [26172] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /work-experience/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 206, in work_experience
+    WorkExperience.objects.create(
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: WorkExperience() got unexpected keyword arguments: 'user'
+2025-01-05 15:48:29 [26172] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "POST /work-experience/ HTTP/1.1" 500 91814
+2025-01-05 15:52:18 [2752] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /work-experience/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 217, in work_experience
+    WorkExperience.objects.create(
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: WorkExperience() got unexpected keyword arguments: 'user'
+2025-01-05 15:52:18 [2752] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "POST /work-experience/ HTTP/1.1" 500 92278
+2025-01-05 15:54:56 [21640] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /education/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table resume_app_education has no column named resume_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 246, in education
+    Education.objects.create(
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table resume_app_education has no column named resume_id
+2025-01-05 15:54:56 [21640] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "POST /education/ HTTP/1.1" 500 168662
+2025-01-05 16:12:27 [21468] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /education/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table resume_app_education has no column named resume_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 246, in education
+    Education.objects.create(
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table resume_app_education has no column named resume_id
+2025-01-05 16:12:27 [21468] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "POST /education/ HTTP/1.1" 500 168662
+2025-01-05 16:15:49 [32052] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /education/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table resume_app_education has no column named resume_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 246, in education
+    Education.objects.create(
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table resume_app_education has no column named resume_id
+2025-01-05 16:15:49 [32052] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "POST /education/ HTTP/1.1" 500 168662
+2025-01-05 16:16:55 [32052] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /education/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table resume_app_education has no column named resume_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 246, in education
+    Education.objects.create(
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table resume_app_education has no column named resume_id
+2025-01-05 16:16:55 [32052] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "POST /education/ HTTP/1.1" 500 168662
+2025-01-05 16:50:40 [21244] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /resume-preview/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\engine.py", line 214, in select_template
+    raise TemplateDoesNotExist(", ".join(not_found))
+django.template.exceptions.TemplateDoesNotExist: resume_app/template_{{ template_id }}.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 150, in preview_resume
+    return render(request, 'resume_app/resume_preview.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: resume_app/template_{{ template_id }}.html
+2025-01-05 16:50:40 [21244] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /resume-preview/ HTTP/1.1" 500 158318
+2025-01-05 17:00:21 [21244] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /resume-preview/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\engine.py", line 214, in select_template
+    raise TemplateDoesNotExist(", ".join(not_found))
+django.template.exceptions.TemplateDoesNotExist: resume_app/template_{{ template_id }}.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 150, in preview_resume
+    return render(request, 'resume_app/resume_preview.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: resume_app/template_{{ template_id }}.html
+2025-01-05 17:00:21 [21244] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /resume-preview/ HTTP/1.1" 500 158318
+2025-01-05 17:00:23 [21244] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /resume-preview/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\engine.py", line 214, in select_template
+    raise TemplateDoesNotExist(", ".join(not_found))
+django.template.exceptions.TemplateDoesNotExist: resume_app/template_{{ template_id }}.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 150, in preview_resume
+    return render(request, 'resume_app/resume_preview.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: resume_app/template_{{ template_id }}.html
+2025-01-05 17:00:23 [21244] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /resume-preview/ HTTP/1.1" 500 158318
+2025-01-05 23:30:01 [21244] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /resume-preview/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\engine.py", line 214, in select_template
+    raise TemplateDoesNotExist(", ".join(not_found))
+django.template.exceptions.TemplateDoesNotExist: resume_app/template_{{ template_id }}.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 150, in preview_resume
+    return render(request, 'resume_app/resume_preview.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: resume_app/template_{{ template_id }}.html
+2025-01-05 23:30:01 [21244] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /resume-preview/ HTTP/1.1" 500 158318
+2025-01-06 15:43:43 [24000] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /contact-info/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: resume_app_contactinfo
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 90, in contact_info
+    contact_info = ContactInfo.objects.filter(user=request.user).first()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 1097, in first
+    for obj in queryset[:1]:
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: resume_app_contactinfo
+2025-01-06 15:43:43 [24000] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /contact-info/ HTTP/1.1" 500 140346
+2025-01-06 15:43:50 [24000] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /contact-info/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: resume_app_contactinfo
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 90, in contact_info
+    contact_info = ContactInfo.objects.filter(user=request.user).first()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 1097, in first
+    for obj in queryset[:1]:
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: resume_app_contactinfo
+2025-01-06 15:43:50 [24000] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /contact-info/ HTTP/1.1" 500 140348
+2025-01-06 16:20:33 [27520] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /contact-info/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: resume_app_contactinfo
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 90, in contact_info
+    contact_info = ContactInfo.objects.filter(user=request.user).first()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 1097, in first
+    for obj in queryset[:1]:
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: resume_app_contactinfo
+2025-01-06 16:20:33 [27520] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /contact-info/ HTTP/1.1" 500 142039
+2025-01-06 18:34:12 [27412] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /contact-info/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: resume_app_contactinfo
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 97, in contact_info
+    contact_info = ContactInfo.objects.filter(user=request.user).first()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 1097, in first
+    for obj in queryset[:1]:
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: resume_app_contactinfo
+2025-01-06 18:34:13 [27412] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /contact-info/ HTTP/1.1" 500 142072
+2025-01-07 09:38:23 [10132] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\utils\log.py lineno=248 funcname=log_response Internal Server Error: /contact-info/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 97, in contact_info
+    contact_info = ContactInfo.objects.filter(user=request.user).first()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\sql\query.py", line 1303, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\sql\query.py", line 1768, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: address, email, id, name, phone
+2025-01-07 09:38:23 [10132] [ERROR] pathname=C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\servers\basehttp.py lineno=213 funcname=log_message "GET /contact-info/ HTTP/1.1" 500 118938
+2025-01-07 17:26:35 [ERROR] You're accessing the development server over HTTPS, but it only supports HTTP.
+2025-01-07 17:26:35 [ERROR] You're accessing the development server over HTTPS, but it only supports HTTP.
+2025-01-07 17:26:40 [ERROR] You're accessing the development server over HTTPS, but it only supports HTTP.
+2025-01-07 17:26:40 [ERROR] You're accessing the development server over HTTPS, but it only supports HTTP.
+2025-01-07 17:26:40 [ERROR] You're accessing the development server over HTTPS, but it only supports HTTP.
+2025-01-07 17:26:40 [ERROR] You're accessing the development server over HTTPS, but it only supports HTTP.
+2025-01-07 19:21:35 [ERROR] Internal Server Error: /skills/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 123, in skills
+    form = handle_form(request, SkillsForm, 'languages_view')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 31, in handle_form
+    form = form_class(request.POST or None, instance=instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseForm.__init__() got an unexpected keyword argument 'instance'
+2025-01-07 19:21:35 [ERROR] "GET /skills/ HTTP/1.1" 500 77672
+2025-01-07 19:21:44 [ERROR] Internal Server Error: /languages-known/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 256, in languages_known
+    return render(request, 'languages_known.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: languages_known.html
+2025-01-07 19:21:44 [ERROR] "GET /languages-known/ HTTP/1.1" 500 83214
+2025-01-07 22:06:43 [ERROR] Internal Server Error: /contact-info/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: resume_app_contactinfo.first_name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 93, in contact_info
+    contact_info, created = ContactInfo.objects.get_or_create(user=request.user)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: resume_app_contactinfo.first_name
+2025-01-07 22:06:43 [ERROR] "GET /contact-info/ HTTP/1.1" 500 147208
+2025-01-07 23:00:43 [ERROR] Internal Server Error: /contact-info/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 97, in contact_info
+    form = handle_form(request, ContactInfoForm, 'work_experience_view', instance=contact_info)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 37, in handle_form
+    return redirect(success_url)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'work_experience_view' not found. 'work_experience_view' is not a valid view function or pattern name.
+2025-01-07 23:00:43 [ERROR] "POST /contact-info/ HTTP/1.1" 500 94515
+2025-01-07 23:02:51 [ERROR] Internal Server Error: /contact-info/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 98, in contact_info
+    if not form.is_valid():
+           ^^^^^^^^^^^^^
+AttributeError: 'HttpResponseRedirect' object has no attribute 'is_valid'
+2025-01-07 23:02:51 [ERROR] "POST /contact-info/ HTTP/1.1" 500 70435
+2025-01-07 23:05:02 [ERROR] Internal Server Error: /contact-info/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 98, in contact_info
+    if not form.is_valid():
+           ^^^^^^^^^^^^^
+AttributeError: 'HttpResponseRedirect' object has no attribute 'is_valid'
+2025-01-07 23:05:02 [ERROR] "POST /contact-info/ HTTP/1.1" 500 70746
+2025-01-07 23:08:48 [ERROR] Internal Server Error: /contact-info/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 102, in contact_info
+    return redirect('work_experience')  # Replace with your actual URL name
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'work_experience' not found. 'work_experience' is not a valid view function or pattern name.
+2025-01-07 23:08:48 [ERROR] "POST /contact-info/ HTTP/1.1" 500 89656
+2025-01-08 00:41:11 [ERROR] Internal Server Error: /work-experience/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: resume_app_workexperience.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 117, in work_experience
+    form.save()
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\forms\models.py", line 554, in save
+    self.instance.save()
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: resume_app_workexperience.user_id
+2025-01-08 00:41:11 [ERROR] "POST /work-experience/ HTTP/1.1" 500 163095
+2025-01-08 00:58:48 [ERROR] Internal Server Error: /skills/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 147, in skills
+    form.save()
+    ^^^^^^^^^
+AttributeError: 'SkillsForm' object has no attribute 'save'
+2025-01-08 00:58:48 [ERROR] "POST /skills/ HTTP/1.1" 500 74299
+2025-01-08 01:04:47 [ERROR] Internal Server Error: /skills/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 147, in skills
+    form.save()
+    ^^^^^^^^^
+AttributeError: 'SkillsForm' object has no attribute 'save'
+2025-01-08 01:04:47 [ERROR] "POST /skills/ HTTP/1.1" 500 74299
+2025-01-08 01:19:01 [ERROR] Internal Server Error: /skills/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 148, in skills
+    skills_instance = Skills(user=request.user, skills=skills_data)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Skills() got unexpected keyword arguments: 'skills'
+2025-01-08 01:19:01 [ERROR] "POST /skills/ HTTP/1.1" 500 81730
+2025-01-08 01:19:17 [ERROR] Internal Server Error: /skills/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 148, in skills
+    skills_instance = Skills(user=request.user, skills=skills_data)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Skills() got unexpected keyword arguments: 'skills'
+2025-01-08 01:19:17 [ERROR] "POST /skills/ HTTP/1.1" 500 81730
+2025-01-08 01:20:46 [ERROR] Internal Server Error: /skills/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 148, in skills
+    skills_instance = Skills(user=request.user, skills=skills_data)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Skills() got unexpected keyword arguments: 'skills'
+2025-01-08 01:20:46 [ERROR] "POST /skills/ HTTP/1.1" 500 81730
+2025-01-08 01:20:51 [ERROR] Internal Server Error: /skills/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 148, in skills
+    skills_instance = Skills(user=request.user, skills=skills_data)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Skills() got unexpected keyword arguments: 'skills'
+2025-01-08 01:20:51 [ERROR] "POST /skills/ HTTP/1.1" 500 81730
+2025-01-08 01:23:49 [ERROR] Internal Server Error: /skills/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table resume_app_skills has no column named skill
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 149, in skills
+    skills_instance.save()
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table resume_app_skills has no column named skill
+2025-01-08 01:23:49 [ERROR] "POST /skills/ HTTP/1.1" 500 156165
+2025-01-08 01:23:52 [ERROR] Internal Server Error: /skills/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table resume_app_skills has no column named skill
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 149, in skills
+    skills_instance.save()
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table resume_app_skills has no column named skill
+2025-01-08 01:23:52 [ERROR] "POST /skills/ HTTP/1.1" 500 156165
+2025-01-08 02:05:44 [ERROR] Internal Server Error: /languages-known/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 182, in languages_known
+    Language.objects.create(user=request.user, language=lang, proficiency=prof)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\env\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Language() got unexpected keyword arguments: 'proficiency'
+2025-01-08 02:05:44 [ERROR] "POST /languages-known/ HTTP/1.1" 500 91044
+2025-01-08 15:53:09 [ERROR] Internal Server Error: /choose-template/preview_resume/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 224, in preview_resume
+    return render(request, 'resume_app/templateno3.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: resume_app/templateno3.html
+2025-01-08 15:53:09 [ERROR] "GET /choose-template/preview_resume/ HTTP/1.1" 500 97164
+2025-01-14 19:31:05 [ERROR] Internal Server Error: /languages-known/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 198, in languages_known
+    return render(request, 'resume_app/languages_known.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\template\base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\template\base.py", line 701, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\template\base.py", line 611, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'as_crispy_field'
+2025-01-14 19:31:05 [ERROR] "POST /languages-known/ HTTP/1.1" 500 187229
+2025-01-17 16:40:56 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 80, in homepage
+    messages.success(request, f"Sign-up successful! Welcome, {user.username}!")
+                                                              ^^^^
+UnboundLocalError: cannot access local variable 'user' where it is not associated with a value
+2025-01-17 16:40:56 [ERROR] "POST / HTTP/1.1" 500 70727
+2025-01-18 15:58:51 [ERROR] Internal Server Error: /preview-resume/
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: resume_app_resume.created_at
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\views.py", line 234, in preview_resume
+    resume = Resume.objects.filter(user=user).order_by('-id').first()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\db\models\query.py", line 1097, in first
+    for obj in queryset[:1]:
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\elank\OneDrive\Desktop\Project\myproject\resume_app\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: resume_app_resume.created_at
+2025-01-18 15:58:51 [ERROR] "GET /preview-resume/ HTTP/1.1" 500 146663

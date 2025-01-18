@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Information</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+        body {
+            font-family: "Times New Roman", serif;
+            background: url("{% static 'resume_app/images/backgroundpic.png' %}") no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            width: calc(100% - 20px);
+            border: none;
+            border-radius: 5px;
+        }
+
+        .button {
+            background-color: black;
+            color: white;
+            font-family: 'Italiana', serif;
+            font-size: 16px;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-align: center;
+            margin: 10px 5px;
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .button:active {
+            transform: scale(0.95);
+        }
+
+        .footer-links {
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Italiana', serif;
+        }
+
+        .footer-links a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function addEducation() {
+            const educationForm = document.querySelector('.form-group');
+            const newEducationForm = educationForm.cloneNode(true);
+
+            const inputs = newEducationForm.querySelectorAll('input');
+            inputs.forEach(input => input.value = '');
+
+            document.querySelector('.form-container').appendChild(newEducationForm);
+        }
+
+        function removeEducation(button) {
+            const formGroup = button.closest('.form-group');
+            if (document.querySelectorAll('.form-group').length > 1) {
+                formGroup.remove();
+            } else {
+                alert('You must have at least one education record!');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Tell Us About Your Education</h1>
+    <form method="POST" action="{% url 'education' %}">
+        {% csrf_token %}
+        <div class="form-container">
+            <!-- Education Form -->
+            <div class="form-group">
+                <label for="school">School</label>
+                <input type="text" id="school" name="school" placeholder="School" required>
+    
+                <label for="degree">Degree</label>
+                <input type="text" id="degree" name="degree" placeholder="Degree" required>
+    
+                <label for="start_date">Start Date</label>
+                <input type="date" id="start_date" name="start_date" required>
+    
+                <label for="end_date">End Date</label>
+                <input type="date" id="end_date" name="end_date" required>
+    
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="City" required>
+    
+                <button type="button" class="button" onclick="removeEducation(this)">Remove</button>
+            </div>
+        </div>
+    
+        <button type="button" class="button" onclick="addEducation()">Add More</button>
+        <button type="submit" class="button">Next</button>
+    </form>
+    
+
+    <!-- Footer with Links -->
+    <div class="footer-links">
+        <a href="{% url 'privacy_policy' %}">Privacy Policy</a>
+        <a href="{% url 'terms_conditions' %}">Terms & Conditions</a>
+        <a href="{% url 'accessibility' %}">Accessibility</a>
+        <a href="{% url 'contact_us' %}">Contact Us</a>
+    </div>
+</body>
+</html>

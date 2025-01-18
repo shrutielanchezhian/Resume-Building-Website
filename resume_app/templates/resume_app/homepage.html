@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="{% static 'resume_app/css/style.css' %}">
+</head>
+<body>
+    <!-- Background Container -->
+    <div class="homepage-container" style="background-image: url('{% static 'resume_app/images/backgroundpic.png' %}');">
+        <!-- Logo and Title -->
+        <div class="logo-container">
+            <img src="{% static 'resume_app/images/resumeicon.png' %}" alt="Logo" class="logo-image">
+            <div class="resume-builder">Resume Builder</div>
+        </div>
+
+        <!-- Centered Image -->
+        <img src="{% static 'resume_app/images/Rectangle 3.png' %}" alt="Centered CV Image" class="center-image">
+
+        <!-- My Account Button -->
+        <div class="myaccount-container">
+            <a href="javascript:void(0);" class="my-account-btn" onclick="showLoginForm()">My Account</a>
+        </div>
+        
+        <!-- Form Container -->
+        <div class="form-container" id="form-box" style="display: none;">
+            <h2 id="form-title">Login</h2>
+
+            <!-- Login Form -->
+            <div id="login-form" style="display: block;">
+                <form method="POST" action="{% url 'homepage' %}">
+                    {% csrf_token %}
+              
+                    <input type="text" name="username" autocomplete="Username/Email" required>
+                    <input type="password" name="password" autocomplete="Password" required>
+                    <button type="submit" name="login">Login</button>
+                    <p>Don't have an account? <a href="javascript:void(0);" onclick="showSignupForm()">Sign Up</a></p>
+                </form>
+            </div>
+
+            <!-- Signup Form -->
+            <div id="signup-form" style="display: none;">
+                <form method="POST" action="{% url 'homepage' %}">
+                    {% csrf_token %}
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password1" placeholder="Password" required>
+                    <input type="password" name="password2" placeholder="Confirm Password" required>
+                    <button type="submit" name="signup">Sign Up</button>
+                    <p>Already have an account? <a href="javascript:void(0);" onclick="showLoginForm()">Login</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <ul class="footer-links">
+            <li><a href="{% url 'terms_conditions' %}">Terms & Conditions</a></li>
+            <li class="line-div"></li>
+            <li><a href="{% url 'privacy_policy' %}">Privacy Policy</a></li>
+            <li class="line-div"></li>
+            <li><a href="{% url 'accessibility' %}">Accessibility</a></li>
+            <li class="line-div"></li>
+            <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function showSignupForm() {
+            document.getElementById("login-form").style.display = "none";
+            document.getElementById("signup-form").style.display = "block";
+            document.getElementById("form-box").style.display = "block";
+            document.getElementById("form-title").innerText = "Sign Up";
+        }
+
+        function showLoginForm() {
+            document.getElementById("signup-form").style.display = "none";
+            document.getElementById("login-form").style.display = "block";
+            document.getElementById("form-box").style.display = "block";
+            document.getElementById("form-title").innerText = "Login";
+        }
+    </script>
+</body>

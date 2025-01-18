@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional Courses</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <style>
+        /* Body and General Styling */
+        body {
+            margin: 0;
+            font-family: 'Italiana', Arial, sans-serif;
+            background: url('{% static "resume_app/images/backgroundpic.png" %}') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .input-container {
+            margin: 20px auto;
+        }
+
+        input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 15px;
+            border: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 1em;
+        }
+
+        input[type="text"]::placeholder {
+            color: #ddd;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .next-button, .add-more-button {
+            padding: 10px 30px;
+            border: none;
+            border-radius: 20px;
+            background: black;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 0 10px;
+            font-family: 'Italiana', serif; /* Applying Italian font to buttons */
+            transition: background-color 0.3s ease;
+        }
+
+        .next-button:hover, .add-more-button:hover {
+            background-color: #333;
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        // JavaScript function to add more course fields dynamically
+        function addMoreCourses() {
+            const inputContainer = document.querySelector('.input-container');
+            const newInput = document.createElement('input');
+            newInput.type = 'text';
+            newInput.name = `course${inputContainer.children.length + 1}`;  // Ensuring the name attribute changes
+            newInput.placeholder = `Additional Course ${inputContainer.children.length + 1}`;
+            newInput.style.marginTop = '10px';
+            inputContainer.appendChild(newInput);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Additional Courses if done</h1>
+        <form method="post" action="{% url 'additional_courses' %}">
+            {% csrf_token %}
+            <div class="input-container" id="courses-container">
+                <!-- Initial course input fields -->
+                <div class="course-field">
+                    <input type="text" name="course_name[]" placeholder="Course 1" required>
+                    <input type="text" name="institution[]" placeholder="Institution" required>
+                </div>
+            </div>
+            <div class="button-container">
+                <!-- Button to add more course input fields dynamically -->
+                <button type="button" class="add-more-button" onclick="addMoreCourses()">Add More Courses</button>
+                <button type="submit" class="next-button">Next</button>
+            </div>
+        </form>
+        
+        <script>
+            function addMoreCourses() {
+                // Create a new set of course input fields
+                var newCourseField = document.createElement('div');
+                newCourseField.classList.add('course-field');
+                newCourseField.innerHTML = `
+                    <input type="text" name="course_name[]" placeholder="Course Name" required>
+                    <input type="text" name="institution[]" placeholder="Institution" required>
+               
+                `;
+                document.getElementById('courses-container').appendChild(newCourseField);
+            }
+        </script>
+        
+        <div class="footer">
+            <a href="#">Terms & Conditions</a> |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Accessibility</a> |
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+</body>
+</html>
