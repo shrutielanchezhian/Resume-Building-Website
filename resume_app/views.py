@@ -84,7 +84,7 @@ def index(request):
             print("CSRF Token in POST:", request.POST.get("csrfmiddlewaretoken"))
 
                 
-    return render(request, 'resume_app/index.html', {
+    return render(request, 'index.html', {
         'login_form': login_form,
         'signup_form': signup_form,
     })
