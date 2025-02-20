@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - {{ contact_info.full_name }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>{{ contact_info.full_name }}</h1>
+        <p>{{ contact_info.email }}</p>
+        <p>{{ contact_info.phone }}</p>
+    </div>
+
+    <div class="section">
+        <h2>Work Experience</h2>
+        <ul>
+            {% for job in work_experience %}
+            <li>
+                <strong>{{ job.company_name }}</strong> - {{ job.role }}
+                <p>{{ job.description }}</p>
+                <p>{{ job.start_date }} - {{ job.end_date }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <ul>
+            {% for school in education %}
+            <li>
+                <strong>{{ school.institution_name }}</strong> - {{ school.degree }}
+                <p>{{ school.start_date }} - {{ school.end_date }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <p>{{ skills }}</p>
+    </div>
+
+    <div class="section">
+        <h2>Languages</h2>
+        <ul>
+            {% for language in languages_known %}
+            <li>{{ language }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Additional Courses</h2>
+        <ul>
+            {% for course in additional_courses %}
+            <li>{{ course }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

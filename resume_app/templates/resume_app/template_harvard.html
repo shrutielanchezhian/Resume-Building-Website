@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Harvard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('{% static "resume_app/images/cv-example-harvard-3f6591.min.jpg" %}') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Dark background for readability */
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            color: #fff;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            font-size: 1.5em;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 5px;
+            color: #fff;
+        }
+        .item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ user.username }}'s Resume</h1>
+        <!-- Contact Info Section -->
+        <div class="section">
+            <h2>Contact Information</h2>
+            <p><strong>Name:</strong> {{ contact_info.name }}</p>
+            <p><strong>Email:</strong> {{ contact_info.email }}</p>
+            <p><strong>Phone:</strong> {{ contact_info.phone }}</p>
+        </div>
+        <!-- Work Experience Section -->
+        <div class="section">
+            <h2>Work Experience</h2>
+            {% for experience in work_experience %}
+            <div class="item">
+                <p><strong>Job Title:</strong> {{ experience.job_title }}</p>
+                <p><strong>Employer:</strong> {{ experience.employer }}</p>
+                <p><strong>City:</strong> {{ experience.city }}</p>
+                <p><strong>Start Date:</strong> {{ experience.start_date }}</p>
+                <p><strong>End Date:</strong> {{ experience.end_date }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <!-- Additional Sections (like Courses, Languages, etc.) -->
+    </div>
+</body>
+</html>

@@ -27,6 +27,11 @@
   border-radius: 50px;
   text-decoration: none;
   z-index: 11; /* Ensure it's above other content */
+  transition: background-color 0.3s ease;
+}
+
+.my-account-btn:hover {
+  background-color: #333;
 }
 
 /* Centered Login/Signup Box */
@@ -37,53 +42,75 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(192, 192, 192, 0.95); /* Silver-like */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.8); /* Silver-like */
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
   color: #333;
 }
 
 .form-container h2 {
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 32px;
+  font-family: 'Italiana', serif;
+  color: #333,
 }
+
+.form-container .input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-container .input-group i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #888;
+}
+
 
 /* Input Fields */
 .form-container input {
   width: 100%;
-  padding: 10px;
+  padding: 12px 40px;
   margin: 10px 0;
-  border: none;
-  border-radius: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
   box-sizing: border-box;
+  font-family: 'Italiana', serif;
+  font-size: 16px;
 }
 
 .form-container button {
   width: 100%;
   padding: 10px;
-  background-color: #1e3c72;
+  background-color: black;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
+  font-family: 'Italiana', serif;
+  transition: background-color 0.3s ease;
 }
 
 .form-container button:hover {
-  background-color: #2a5298;
+  background-color: #474242;
 }
 
 /* Signup Link */
 .form-container p {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .form-container a {
-  color: #1e3c72;
+  color: black;
   text-decoration: none;
   font-weight: bold;
+  font-family: 'Italiana', serif;
 }
 
 .form-container a:hover {
@@ -107,7 +134,7 @@
 
 .resume-builder {
   color: white;
-  font-family: 'serif';
+  font-family:'Italiana' 'serif';
   font-size: 30px;
 }
 

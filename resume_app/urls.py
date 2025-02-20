@@ -14,6 +14,7 @@ urlpatterns = [
 
     # Resume List
     path('resume-list/', views.resume_list, name='resume_list'),
+     path('preview-resume/', views.preview_resume, name='preview_resume'),
 
     # Template Selection and Resume Flow
     path('choose-template/', views.choose_template, name='choose_template'),
@@ -21,6 +22,7 @@ urlpatterns = [
     path('save-template-choice/', views.save_template_choice, name='save_template_choice'),
     path('preview-resume/', views.preview_resume, name='preview_resume'),  # Corrected this URL path
     path('download-resume/<int:resume_id>/', views.download_resume, name='download_resume'),
+    
 
     # Form Flow Steps
     path('contact-info/', views.contact_info, name='contact_info'),

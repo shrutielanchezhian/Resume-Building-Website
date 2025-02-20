@@ -80,6 +80,7 @@
             text-decoration: underline;
         }
     </style>
+   
     <script>
         function addEducation() {
             const educationForm = document.querySelector('.form-group');
@@ -99,6 +100,7 @@
                 alert('You must have at least one education record!');
             }
         }
+    
     </script>
 </head>
 <body>
@@ -106,31 +108,29 @@
     <form method="POST" action="{% url 'education' %}">
         {% csrf_token %}
         <div class="form-container">
-            <!-- Education Form -->
             <div class="form-group">
                 <label for="school">School</label>
-                <input type="text" id="school" name="school" placeholder="School" required>
+                <input type="text" name="school" placeholder="School" required>
     
                 <label for="degree">Degree</label>
-                <input type="text" id="degree" name="degree" placeholder="Degree" required>
+                <input type="text" name="degree" placeholder="Degree" required>
     
                 <label for="start_date">Start Date</label>
-                <input type="date" id="start_date" name="start_date" required>
+                <input type="date" name="start_date" required>
+
     
                 <label for="end_date">End Date</label>
-                <input type="date" id="end_date" name="end_date" required>
+                <input type="date" name="end_date" required>
     
                 <label for="city">City</label>
-                <input type="text" id="city" name="city" placeholder="City" required>
+                <input type="text" name="city" placeholder="City" required>
     
-                <button type="button" class="button" onclick="removeEducation(this)">Remove</button>
+                <button type="button"class="button" onclick="removeEducation(this)">Remove</button>
             </div>
         </div>
-    
         <button type="button" class="button" onclick="addEducation()">Add More</button>
-        <button type="submit" class="button">Next</button>
+        <button type="submit"   class="button">Next</button>
     </form>
-    
 
     <!-- Footer with Links -->
     <div class="footer-links">

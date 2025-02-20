@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User  # Use the built-in User model
+from django.utils.timezone import now
 
 # Resume model
 class Resume(models.Model):
@@ -13,9 +14,8 @@ class Resume(models.Model):
     portfolio = models.URLField(blank=True, null=True)
     resume_file = models.FileField(upload_to='resumes/', blank=True, null=True)
     chosen_template = models.CharField(max_length=255)
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True)  # Added default=now
     updated_at = models.DateTimeField(auto_now=True)
-
     def __str__(self):
         return f"{self.name} ({self.user.username})"
 

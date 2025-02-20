@@ -8,7 +8,9 @@ from django.contrib import messages
 from django.http import JsonResponse, HttpResponse
 from django.template.loader import render_to_string
 from django.core.exceptions import ObjectDoesNotExist, MultipleObjectsReturned
+from django.views.decorators.csrf import csrf_exempt
 from django.utils.timezone import now
+from django.middleware.csrf import get_token
 from django.contrib.auth import login as auth_login
 from weasyprint import HTML
 from .forms import (
@@ -77,6 +79,10 @@ def homepage(request):
             else:
                 messages.error(request, "There was an error with your sign-up. Please correct the errors below.")
                 print("Signup form errors:", signup_form.errors) # Ensure that `user` is not accessed here
+            
+            print("CSRF Cookie:", request.COOKIES.get("csrftoken"))
+            print("CSRF Token in POST:", request.POST.get("csrfmiddlewaretoken"))
+
                 
     return render(request, 'resume_app/homepage.html', {
         'login_form': login_form,
@@ -90,13 +96,13 @@ def logout(request):
     messages.success(request, "You have been successfully logged out.")
     return redirect('homepage')
 
+
 @login_required
 def resume_list(request):
     user = request.user
 
     if request.method == 'POST':
-        # If "Create New Resume" is clicked
-        # Delete the existing resume and related data
+        # If "Create New Resume" is clicked, delete the existing resume
         Resume.objects.filter(user=user).delete()
         ContactInfo.objects.filter(user=user).delete()
         WorkExperience.objects.filter(user=user).delete()
@@ -105,11 +111,30 @@ def resume_list(request):
         AdditionalCourse.objects.filter(user=user).delete()
         Language.objects.filter(user=user).delete()
 
-        # Redirect to the first step of the form flow
-        return redirect('contact_info')  # Adjust to the URL name of your first step
+        # Create a new resume
+        new_resume = Resume.objects.create(
+            user=user,
+            name=f"Resume for {user.first_name} {user.last_name}".strip() or f"Resume for User ({user.username})",
+            email=user.email,
+            phone="",
+            summary="",
+            address="",
+            chosen_template="default"
+        )
+        return redirect('contact_info')  # Adjust to redirect to the first step of the form flow
 
-    return render(request, 'resume_app/resume_list.html', {'user': user})
+    resumes = Resume.objects.filter(user=user)
+    return render(request, 'resume_app/resume_list.html', {'resumes': resumes, 'user': user})
 
+
+def preview_resume(request):
+    # Retrieve the most recent resume or the previous resume
+    try:
+        resume = Resume.objects.filter(user=request.user).order_by('-created_at').first()
+    except Resume.DoesNotExist:
+        resume = None
+
+    return render(request, 'preview_resume.html', {'resume': resume})
 
 @login_required
 def next_steps(request):
@@ -150,6 +175,7 @@ def work_experience(request):
 
     return render(request, 'resume_app/work_experience.html', {'form': form})
 
+
 # Education (Step 3)
 @login_required
 def education(request):
@@ -166,7 +192,6 @@ def education(request):
         form = EducationForm()
 
     return render(request, 'resume_app/education.html', {'form': form})
-
 
 @login_required
 def skills(request):
@@ -255,8 +280,9 @@ def preview_resume(request):
         }
 
         return render(request, 'resume_app/preview_resume.html', context)
-    except Resume.DoesNotExist:
-        messages.error(request, "You need to create a resume first.")
+    
+    except Exception as e:
+        messages.error(request, f"An error occurred: {str(e)}")
         return redirect('resume_list')
 
 
@@ -361,3 +387,13 @@ def choose_template(request):
 
     # Redirect to preview resume page if no template selection page is available
     return redirect('preview_resume')  # Redirect directly to the preview resume page
+
+
+
+def some_view(request):
+    # Debugging CSRF values
+    print("CSRF Cookie:", request.COOKIES.get("csrftoken"))
+    print("CSRF Token in POST:", request.POST.get("csrfmiddlewaretoken"))
+    print("CSRF Token from get_token():", get_token(request))
+    
+    return HttpResponse("Check the console for CSRF token details.")

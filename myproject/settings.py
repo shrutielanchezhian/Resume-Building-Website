@@ -6,9 +6,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Security Settings
 SECRET_KEY = 'your-secret-key'
-DEBUG = True
+DEBUG = True  # Set to False in production
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
-SESSION_COOKIE_AGE = 3600 
+
+# Session settings
+SESSION_COOKIE_AGE = 3600  # 1 hour session duration
 
 # Installed Applications
 INSTALLED_APPS = [
@@ -18,10 +20,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'resume_app',  # Make sure this is correct
-    'django_extensions',  # This is the correct app name for Django Extensions
+    'resume_app',  # Ensure this is correct
+    'django_extensions',  # Optional: For development utilities
 ]
-
 
 # Middleware
 MIDDLEWARE = [
@@ -32,7 +33,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-      'myproject.middleware.SetContentTypeMiddleware',
+    # Comment out custom middleware if it interferes
+    # 'myproject.middleware.SetContentTypeMiddleware',
 ]
 
 # Root URL Configuration
@@ -104,25 +106,18 @@ LOGIN_URL = 'homepage'  # Redirect here if user tries to access protected page w
 LOGIN_REDIRECT_URL = '/resume-list/'  # Redirect here after successful login
 LOGOUT_REDIRECT_URL = '/'  # Redirect here after logout
 
+# CSRF Settings
+CSRF_TRUSTED_ORIGINS = [
+    'http://127.0.0.1:8000',
+    'http://localhost:8000',  # Added for local compatibility
+]
 
-DEBUG = True  # This is already set for local development
-
-if not DEBUG:  # These settings should only apply in production
-    SESSION_COOKIE_SECURE = True
-    CSRF_COOKIE_SECURE = True
-    SECURE_SSL_REDIRECT = True
-else:
-    SESSION_COOKIE_SECURE = False
-    CSRF_COOKIE_SECURE = False
-    SECURE_SSL_REDIRECT = False
-    
-
+SESSION_COOKIE_SECURE = False  # Ensure this is True in production
+CSRF_COOKIE_SECURE = False  # Ensure this is True in production
+SECURE_SSL_REDIRECT = False  # Ensure this is True in production
 SESSION_COOKIE_HTTPONLY = True
 CSRF_COOKIE_HTTPONLY = True
-# Session Engine
-SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 
-# Logging
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -137,7 +132,7 @@ LOGGING = {
     },
     'handlers': {
         'file': {
-            'level': 'ERROR',
+            'level': 'WARNING',  # Set this to WARNING to reduce verbosity
             'class': 'logging.FileHandler',
             'filename': os.path.join(BASE_DIR, 'django_debug.log'),
             'formatter': 'verbose',
@@ -150,8 +145,20 @@ LOGGING = {
     'loggers': {
         'django': {
             'handlers': ['file', 'console'],
-            'level': 'ERROR',
+            'level': 'INFO',  # Adjust this to control verbosity globally
             'propagate': True,
+        },
+        'django.db.backends': {  # Logs SQL queries
+            'level': 'ERROR',
+            'handlers': ['file', 'console'],
+            'propagate': False,
         },
     },
 }
+
+
+# Debug toggles for development vs. production
+if not DEBUG:
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SECURE_SSL_REDIRECT = True
