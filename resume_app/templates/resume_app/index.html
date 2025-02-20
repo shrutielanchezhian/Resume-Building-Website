@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Background Container -->
-    <div class="homepage-container" style="background-image: url('{% static 'resume_app/images/backgroundpic.png' %}');">
+    <div class="index-container" style="background-image: url('{% static 'resume_app/images/backgroundpic.png' %}');">
         <!-- Logo and Title -->
         <div class="logo-container">
             <img src="{% static 'resume_app/images/resumeicon.png' %}" alt="Logo" class="logo-image">
@@ -30,7 +30,7 @@
 
             <!-- Login Form -->
             <div id="login-form" style="display: block;">
-                <form method="POST" action="{% url 'homepage' %}">
+                <form method="POST" action="{% url 'index' %}">
                     {% csrf_token %}
               
                     <input type="text" name="username" autocomplete="Username/Email" required>
@@ -42,7 +42,7 @@
 
             <!-- Signup Form -->
             <div id="signup-form" style="display: none;">
-                <form method="POST" action="{% url 'homepage' %}">
+                <form method="POST" action="{% url 'index' %}">
                     {% csrf_token %}
                     <input type="text" name="username" placeholder="Username" required>
                     <input type="email" name="email" placeholder="Email" required>

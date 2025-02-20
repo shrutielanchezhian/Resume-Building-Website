@@ -102,7 +102,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Authentication Redirects
-LOGIN_URL = 'homepage'  # Redirect here if user tries to access protected page without logging in
+LOGIN_URL = 'index'  # Redirect here if user tries to access protected page without logging in
 LOGIN_REDIRECT_URL = '/resume-list/'  # Redirect here after successful login
 LOGOUT_REDIRECT_URL = '/'  # Redirect here after logout
 

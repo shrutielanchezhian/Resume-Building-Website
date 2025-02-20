@@ -49,7 +49,7 @@ def handle_form(request, form_class, success_url, instance=None):
 def my_account(request):
     return render(request, 'my_account.html')
 
-def homepage(request):
+def index(request):
     login_form = AuthenticationForm(request, data=request.POST or None)
     signup_form = SignUpForm(request.POST or None)
 
@@ -84,7 +84,7 @@ def homepage(request):
             print("CSRF Token in POST:", request.POST.get("csrfmiddlewaretoken"))
 
                 
-    return render(request, 'resume_app/homepage.html', {
+    return render(request, 'resume_app/index.html', {
         'login_form': login_form,
         'signup_form': signup_form,
     })
@@ -94,7 +94,7 @@ def homepage(request):
 def logout(request):
     auth_logout(request)
     messages.success(request, "You have been successfully logged out.")
-    return redirect('homepage')
+    return redirect('index')
 
 
 @login_required
